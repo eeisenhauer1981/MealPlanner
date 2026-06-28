@@ -7,12 +7,9 @@ public class App {
 
         RecipeBook recipeBook = new RecipeBook();
         
-        recipeBook.loadRecipes();
+        SQL.loadRecipes(recipeBook);
 
         recipeBook.printRecipes();
-
-        recipeBook.updateRecipes("TEST UPDATE", 1, 28);
-
-        
+    
     }
 }
